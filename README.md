@@ -15,5 +15,6 @@ This library requires `iOS 6.0+` and `Xcode 7.0+`.
  	
 ### Manually
 
+1. `NSString+XXSubStr` 字符串截取
 
 
