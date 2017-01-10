@@ -8,6 +8,7 @@
 
 #import "NSStringDemoViewController.h"
 #import "NSString+JKUUID.h"
+#import "NSString+XXSubStr.h"
 @interface NSStringDemoViewController ()
 
 @end
@@ -19,7 +20,22 @@
     
     // Do any additional setup after loading the view from its nib.
     
+    NSString *string  = @"JKCategories"  ;
     
+    if ([string xx_startWith:@"JK"]) {
+        NSLog(@"以JK开头");
+    }
+    if ([string xx_endWith:@"ies"]) {
+        NSLog(@"以ies结尾");
+    }
+    
+    if ([string xx_contains:@"w"]) {
+        NSLog(@"不含有W");
+    }
+    NSLog(@"%@",string);
+    NSLog(@"截取字符串 %@ ,%@" , [string xx_substringFromIndexSafe:1000] ,[string xx_substringFromIndexSafe:4]);
+    NSLog(@"截取字符串 %@ , %@ ",[string xx_substringToIndexSafe:100],[string xx_substringToIndexSafe:4]);
+    NSLog(@"%@,%@,%@",[string xx_substringFromIndexSafe:2 toIndex:6],[string xx_substringFromIndexSafe:2 toIndex:200],[string  xx_substringFromIndexSafe:6 toIndex:2]);
 }
 
 - (void)didReceiveMemoryWarning {

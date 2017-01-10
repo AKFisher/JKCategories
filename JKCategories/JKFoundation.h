@@ -89,5 +89,6 @@
 #import "NSURLSession+JKSynchronousTask.h"
 #import "NSUserDefaults+JKiCloudSync.h"
 #import "NSUserDefaults+JKSafeAccess.h"
+#import "NSString+XXSubStr.h"
 
 #endif /* JKFoundation_h */
